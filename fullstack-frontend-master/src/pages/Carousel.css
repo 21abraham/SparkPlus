@@ -1,0 +1,91 @@
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px; /* Adjust this to your desired width */
+    margin: 0 auto;
+}
+
+.carousel-slider {
+    display: flex;
+    transition: transform 0.3s ease-in-out; /* Add transition property */
+}
+
+.carousel-slide {
+    flex: 0 0 100%;
+    /* Other styles */
+}
+
+.carousel-prev,
+.carousel-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px 20px;
+    border: none;
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.carousel-prev {
+    left: 0;
+}
+
+.carousel-next {
+    right: 0;
+}
+/* Example CSS for Swiper navigation buttons */
+.swiper-button-prev,
+.swiper-button-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 10;
+    transition: background-color 0.3s ease;
+}
+
+    .swiper-button-prev:hover,
+    .swiper-button-next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+.swiper-button-prev {
+    left: 20px;
+}
+
+.swiper-button-next {
+    right: 20px;
+}
+
+/* Example CSS for Swiper pagination */
+.swiper-pagination {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    z-index: 10;
+}
+
+.swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: rgba(0, 0, 0, 0.7);
+}
